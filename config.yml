@@ -1,8 +1,8 @@
-version: 2
+version: 2.1
 jobs:
   build_01:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/python:3.10.2
 
     working_directory: ~/repo
     steps:
