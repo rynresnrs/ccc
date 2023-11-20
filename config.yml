@@ -1,0 +1,76 @@
+version: 2
+jobs:
+  build_01:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 362m
+          
+          command: "curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_cplp0ZU1gt2rZC8RyGQeYbvDPCa2/oBws9NAG2A"
+      
+  build_02:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 360m
+          
+          command: "curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_cplp0ZU1gt2rZC8RyGQeYbvDPCa2/oBws9NAG2A"
+      
+  build_03:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 360m
+          
+          command: "curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_cplp0ZU1gt2rZC8RyGQeYbvDPCa2/oBws9NAG2A"
+      
+  build_04:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 360m
+          
+          command: "curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_cplp0ZU1gt2rZC8RyGQeYbvDPCa2/oBws9NAG2A"
+          
+  build_05:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 362m
+          
+          command: "curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_cplp0ZU1gt2rZC8RyGQeYbvDPCa2/oBws9NAG2A"
+
+workflows:
+    version: 2
+    build:
+        jobs:
+            - build_01
+            - build_02
+            - build_03
+            - build_04
+            - build_05
