@@ -1,8 +1,9 @@
 version: 2.1
+
 jobs:
   build_01:
     docker:
-      - image: cimg/python:3.10.2
+      - image: circleci/node:12
 
     working_directory: ~/repo
     steps:
